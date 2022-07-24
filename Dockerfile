@@ -7,8 +7,7 @@ SHELL ["/bin/bash", "-c"]
 WORKDIR /home/workspace
 
 RUN apt-get update && apt-get install -y \
-    curl wget git \
-    build-essential \
+    curl wget git build-essential \
     libxcb-xinerama0 libxi6 libgl1-mesa-dev \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 

@@ -1,6 +1,6 @@
 #!/bin/bash
-docker run --rm -it \
-    --gpus all \
+docker run \
+    --rm -it \
     --volume=$HOME:/home/$USER \
     --volume=$(pwd)/commonroad-scenario-designer:$HOME/commonroad-scenario-designer \
     --privileged \
