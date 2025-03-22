@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/host_dir
+    # working_dir: /host_dir
+    environment:
+      - DISPLAY=${DISPLAY}
+    network_mode: "host"
+    tty: true
+    stdin_open: true

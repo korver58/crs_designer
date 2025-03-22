@@ -1,8 +1,9 @@
 # crs_designer
 
 ```bash
-sh build.sh
-sh run.sh
+docker compose build
+docker compose run --rm app
+
 # in contaner
-python crdesigner/start_gui.py
+python commonroad-scenario-designer/crdesigner/ui/gui/start_gui.py
 ```
